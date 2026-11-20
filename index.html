@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html>
+  
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
   <head>
     <meta charset="utf-8" />
     <title>Unit 4 - Flexbox</title>
     <style>
+      .book-container{
+        Background-color:rgb(69, 100, 69);
+        display: flex;
+        height: 400px;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .book-item{
+        background-color:rgb(74, 128, 90);
+        width: 200px;
+        border-radius: 4px;
+      }
+        
+      #words{
+        padding: 20px;
+        padding-left: 20px;
+        padding-top: 106px;
+        padding-bottom: 106px;
+        border: 3px solid rgb(52, 70, 52);
+        Font-size: 20px;
+        text-align: center;
+        .story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+      }
+      
+
+     
+
     </style>
   </head>
   <body>
     <h1>Cozy Reads</h1>
 
+    <div class="book-container">
+
       <img
         src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654581271i/61242426.jpg"
         width="200"
+        class="book-item"
       />
-      <p>
+      <p class="book-item" id="words">
         It’s not easy to build a coffee shop in a place that has never had
         coffee before. #CozyFantasy
       </p>
-
+    </div>
+<br>
     <img
       src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569514209i/45047384.jpg"
       width="200"
